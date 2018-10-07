@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FenetrePrincipale</class>
+ <widget class="QMainWindow" name="FenetrePrincipale">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1200</width>
+    <height>753</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Graphe</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1200</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFichier">
+    <property name="title">
+     <string>Fichier</string>
+    </property>
+    <addaction name="actionNouveau"/>
+    <addaction name="separator"/>
+    <addaction name="actionQuitter"/>
+   </widget>
+   <widget class="QMenu" name="menuEdition">
+    <property name="title">
+     <string>Edition</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuOutils">
+    <property name="title">
+     <string>Outils</string>
+    </property>
+    <widget class="QMenu" name="menuGraphe">
+     <property name="title">
+      <string>Graphe</string>
+     </property>
+     <addaction name="actionR_initialiser_les_couleurs_2"/>
+     <addaction name="actionRedessiner_les_ar_tes"/>
+     <addaction name="actionRedessiner_le_graphe"/>
+    </widget>
+    <addaction name="menuGraphe"/>
+   </widget>
+   <widget class="QMenu" name="menuA_propos">
+    <property name="title">
+     <string>?</string>
+    </property>
+    <addaction name="actionApropos"/>
+   </widget>
+   <widget class="QMenu" name="menuAlgorithmes">
+    <property name="title">
+     <string>Algorithmes</string>
+    </property>
+    <widget class="QMenu" name="menuColoration">
+     <property name="title">
+      <string>Coloration</string>
+     </property>
+     <addaction name="actionBipartie"/>
+     <addaction name="actionGloutonC"/>
+     <addaction name="action5_Coloration"/>
+    </widget>
+    <widget class="QMenu" name="menuClique_Max">
+     <property name="title">
+      <string>Clique Max</string>
+     </property>
+     <addaction name="actionGloutonMCP"/>
+     <addaction name="actionGlouton_Temps_R_el"/>
+     <addaction name="actionR_cuit_Simul"/>
+    </widget>
+    <widget class="QMenu" name="menuReconaissance">
+     <property name="title">
+      <string>Reconaissance</string>
+     </property>
+     <addaction name="actionOrdre_D_limination_Simplicial"/>
+     <addaction name="actionQLNC2"/>
+    </widget>
+    <addaction name="menuColoration"/>
+    <addaction name="separator"/>
+    <addaction name="menuClique_Max"/>
+    <addaction name="separator"/>
+    <addaction name="menuReconaissance"/>
+   </widget>
+   <addaction name="menuFichier"/>
+   <addaction name="menuEdition"/>
+   <addaction name="menuOutils"/>
+   <addaction name="menuAlgorithmes"/>
+   <addaction name="menuA_propos"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionApropos">
+   <property name="text">
+    <string>A propos</string>
+   </property>
+   <property name="whatsThis">
+    <string/>
+   </property>
+  </action>
+  <action name="actionCr_er_un_sommet">
+   <property name="text">
+    <string>Créer un sommet</string>
+   </property>
+  </action>
+  <action name="actionCr_er_une_ar_te">
+   <property name="text">
+    <string>Créer une arête</string>
+   </property>
+  </action>
+  <action name="actionModifier_le_sommet">
+   <property name="text">
+    <string>Modifier le sommet</string>
+   </property>
+  </action>
+  <action name="actionModifier_l_ar_te">
+   <property name="text">
+    <string>Modifier l'arête</string>
+   </property>
+  </action>
+  <action name="actionQuitter">
+   <property name="icon">
+    <iconset>
+     <normaloff>../build-Graphe-Desktop_Qt_5_4_2_MinGW_32bit-Debug/debug/opened33.png</normaloff>../build-Graphe-Desktop_Qt_5_4_2_MinGW_32bit-Debug/debug/opened33.png</iconset>
+   </property>
+   <property name="text">
+    <string>Quitter</string>
+   </property>
+  </action>
+  <action name="actionBiparti">
+   <property name="text">
+    <string>Coloration</string>
+   </property>
+  </action>
+  <action name="actionNouveau">
+   <property name="text">
+    <string>Nouveau Graphe</string>
+   </property>
+  </action>
+  <action name="actionBipartie">
+   <property name="text">
+    <string>Bipartie</string>
+   </property>
+  </action>
+  <action name="actionGloutonC">
+   <property name="text">
+    <string>Glouton</string>
+   </property>
+  </action>
+  <action name="action5_Coloration">
+   <property name="text">
+    <string>5-Coloration</string>
+   </property>
+  </action>
+  <action name="actionR_initialiser_les_couleurs">
+   <property name="text">
+    <string>Réinitialiser les couleurs</string>
+   </property>
+  </action>
+  <action name="actionR_initialiser_les_couleurs_2">
+   <property name="text">
+    <string>Réinitialiser les couleurs</string>
+   </property>
+  </action>
+  <action name="actionGloutonMCP">
+   <property name="text">
+    <string>Glouton</string>
+   </property>
+  </action>
+  <action name="actionR_cuit_Simul">
+   <property name="text">
+    <string>Récuit Simulé</string>
+   </property>
+  </action>
+  <action name="actionOrdre_D_limination_Simplicial">
+   <property name="text">
+    <string>Graphes Triangulés</string>
+   </property>
+  </action>
+  <action name="actionGlouton_Temps_R_el">
+   <property name="text">
+    <string>Glouton (Temps Réel)</string>
+   </property>
+  </action>
+  <action name="actionRedessiner_les_ar_tes">
+   <property name="text">
+    <string>Redessiner les arêtes</string>
+   </property>
+  </action>
+  <action name="actionQLNC2">
+   <property name="text">
+    <string>Graphes QLNC2</string>
+   </property>
+  </action>
+  <action name="actionRedessiner_le_graphe">
+   <property name="text">
+    <string>Redessiner le graphe</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
